@@ -31,3 +31,25 @@
 
 en:
   hello: "Hello world"
+  app_title: "Pan pals"
+
+  home:
+    home:
+      title: "Pan Pal"
+      welcome: "The one stop shop for pandemic fun! :)"
+    contact:
+        title: "Get in contact!"
+        page_title: "Contact"
+        welcome: "if you have a query or need advice send us an email and we'll try respond within 3 working days"
+        name: "Name:"
+        enter_name: Enter your name
+        email: "Email:"
+        enter_email: Enter your email address
+        telephone: "Telephone:"
+        enter_telephone: Enter your telephone number
+        message: "Message:"
+        enter_message: What do you want to say?
+        submit: Contact Us
+    request_contact:
+      no_email: You must supply an email address
+      email_sent: Thank you. We will be in touch shortly.

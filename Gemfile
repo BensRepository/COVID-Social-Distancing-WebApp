@@ -62,5 +62,6 @@ gem 'devise'
 gem 'haml-rails'
 gem 'bootstrap-sass'
 gem 'modernizr-rails'
+gem 'rails-controller-testing'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
