@@ -37,6 +37,9 @@ en:
     home:
       title: "Pan Pal"
       welcome: "The one stop shop for pandemic fun! :)"
+      game_title: "Covid Knowledge Test"
+      game_desc: "Can you guess what Covid related object is being displayed?"
+      game_desc2: "Guess 5 in a row to pass the test!"
     contact:
         title: "Get in contact!"
         page_title: "Contact"
