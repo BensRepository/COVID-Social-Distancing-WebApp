@@ -1,58 +1,27 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
+---
 en:
-  hello: "Hello world"
   app_title: "Pan pals"
-
+  hello: "Hello world"
   home:
+    contact:
+      email: "Email:"
+      enter_email: "Enter your email address"
+      enter_message: "What do you want to say?"
+      enter_name: "Enter your name"
+      enter_telephone: "Enter your telephone number"
+      message: "Message:"
+      name: "Name:"
+      page_title: Contact
+      submit: Submit
+      telephone: "Telephone:"
+      title: "Get in contact!"
+      welcome: "if you have a query or need advice send us an email and we'll try respond within 3 working days"
     home:
-      title: "Pan Pal"
-      welcome: "The one stop shop for pandemic fun! :)"
-      game_title: "Covid Knowledge Test"
       game_desc: "Can you guess what Covid related object is being displayed?"
       game_desc2: "Guess 5 in a row to pass the test!"
-    contact:
-        title: "Get in contact!"
-        page_title: "Contact"
-        welcome: "if you have a query or need advice send us an email and we'll try respond within 3 working days"
-        name: "Name:"
-        enter_name: Enter your name
-        email: "Email:"
-        enter_email: Enter your email address
-        telephone: "Telephone:"
-        enter_telephone: Enter your telephone number
-        message: "Message:"
-        enter_message: What do you want to say?
-        submit: Submit
+      game_title: "Covid Knowledge Test"
+      title: "Pan Pal"
+      welcome: "The one stop shop for pandemic fun! :)"
     request_contact:
-      no_email: You must supply an email address
-      email_sent: Thank you. We will be in touch shortly.
+      email_sent: "Thank you. We will be in touch shortly."
+      no_email: "You must supply an email address"

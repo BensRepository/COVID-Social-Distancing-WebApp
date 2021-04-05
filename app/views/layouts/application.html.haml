@@ -19,4 +19,9 @@
     - flash.each do |key, value|
       = content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank?
 
+      - if notice
+        %p.alert.alert-success= notice
+      - if alert
+        %p.alert.alert-danger= alert
+
     = yield
