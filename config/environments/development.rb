@@ -36,6 +36,15 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   # heroku host
   config.action_mailer.default_url_options = { :host => 'group19project.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :user_name => '26a62bfc9f2e65',
+    :password => 'd5c853f53d02ae',
+    :address => 'smtp.mailtrap.io',
+    :domain => 'smtp.mailtrap.io',
+    :port => '2525',
+    :authentication => :cram_md5
+  }
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
