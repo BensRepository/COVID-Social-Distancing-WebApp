@@ -1,10 +1,12 @@
 require 'test_helper'
 
 class ContactMailerTest < ActionMailer::TestCase
-  test "should return contact email" do
-    mail = ContactMailer.contact_email("matthew@me.com",
-      "Matthew Casey", "1234567890", @message = "Hello")
-    assert_equal ['clinet@gmail.com'], mail.to
-    assert_equal ['ben@panpal.com'], mail.from
+  test "user_query" do
+    mail = ContactMailer.user_query
+    assert_equal "User query", mail.subject
+    assert_equal ["to@example.org"], mail.to
+    assert_equal ["from@example.com"], mail.from
+    assert_match "Hi", mail.body.encoded
   end
+
 end
