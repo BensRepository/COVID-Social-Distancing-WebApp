@@ -1,19 +1,39 @@
-
-
--#link to forum - probably put in nav bar when we have one
-
-= link_to "Forum", simple_discussion_path
-
-
-%h1= t('.title')
-%p= t('.welcome')
-%title= t('app_title')
-%h2= t('.game_title')
-%p= t('.game_desc')
-%p= t('.game_desc2')
-.form
-  %label{:for => "guessField"}
-    ="Guess:"
-  %input#guessField.guessField{:type => "text"}/
-  %input#submitguess.guessSubmit{:type => "submit", :value => "Submit guess"}/
-  <button onClick="window.location.reload();">Play again</button>
+/ Main jumbotron for a primary marketing message or call to action
+.jumbotron
+  .container
+    %h1 Pan Pals!
+    %p The one stop shop for Pandemic fun! - Welcome to our website, here you can keep up to date with the latest Covid statistics! Play covid related games and join our community. See what others are doing to keep themselves busy over lockdown!
+    %p
+      %a.btn.btn-primary.btn-lg{href: "about", role: "button"} Learn more »
+.container
+  / Example row of columns
+  .row
+    .col-md-4
+      %h2 Covid News API 1
+      %p bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
+      %p
+        %a.btn.btn-default{href: "#", role: "button"} View details »
+    .col-md-4
+      %h2 Covid News API 2
+      %p bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
+      %p
+        %a.btn.btn-default{href: "#", role: "button"} View details »
+    .col-md-4
+      %h2 Current  high scores!
+      %p bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla bla
+      %p
+        %a.btn.btn-default{href: "#", role: "button"} View details »
+  %hr/
+  %footer
+    %p © 2016 Company, Inc.
+/ /container
+/
+  Bootstrap core JavaScript
+  \==================================================
+/ Placed at the end of the document so the pages load faster
+%script{crossorigin: "anonymous", integrity: "sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ", src: "https://code.jquery.com/jquery-1.12.4.min.js"}
+:javascript
+  window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+%script{src: "../../dist/js/bootstrap.min.js"}
+/ IE10 viewport hack for Surface/desktop Windows 8 bug
+%script{src: "../../assets/js/ie10-viewport-bug-workaround.js"}

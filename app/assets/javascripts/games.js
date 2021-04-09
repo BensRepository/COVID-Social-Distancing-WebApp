@@ -23,7 +23,7 @@ function test()
       score++
       alert("WELL DONE!! The it was " + y +", you guessed it in "
                 + guess + " attempts! "); // if right displays this message
-      if(score == 2){
+      if(score == 5){
         alert("You passed the test!")
         location.reload();
 
@@ -42,8 +42,8 @@ function test()
   }
 }};
 
-        $( document ).ready(function(){
-          var score = 0;
-          test();
-
-   });
+   //      $( document ).ready(function(){
+   //        var score = 0;
+   //        test();
+   //
+   // });

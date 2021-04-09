@@ -17,11 +17,15 @@ en:
       title: "Get in contact!"
       welcome: "if you have a query or need advice send us an email and we'll try respond within 3 working days"
     home:
-      game_desc: "Can you guess what Covid related object is being displayed?"
-      game_desc2: "Guess 5 in a row to pass the test!"
-      game_title: "Covid Knowledge Test"
+
       title: "Pan Pal"
       welcome: "The one stop shop for pandemic fun! :)"
     request_contact:
       email_sent: "Thank you. We will be in touch shortly."
       no_email: "You must supply an email address"
+  games:
+    games:
+      game_desc: "Can you guess what Covid related object is being displayed?"
+      game_desc2: "Guess 5 in a row to pass the test!"
+      game_title: "Covid Knowledge Test"
+      page_title: "Games"
