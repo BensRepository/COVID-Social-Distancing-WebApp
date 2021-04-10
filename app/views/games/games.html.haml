@@ -1,13 +1,19 @@
-%body
-  .container-fluid
-    %title= t('.page_title')
-    %h2= t('.game_title')
-    %p= t('.game_desc')
-    %p= t('.game_desc2')
-    .form
-      %label{:for => "guessField"}
-        ="Guess:"
-      %input#guessField.guessField{:type => "text"}/
-      %input#submitguess.guessSubmit{:type => "submit", :value => "Submit guess"}/
-      <button onClick="window.location.reload();">Play again</button>
-    %body{:onload => "test()"}
+.container
+  %body
+    .container-fluid
+      %title= t('.page_title')
+      %h2= t('.game_title')
+      %p= t('.game_desc')
+      %p= t('.game_desc2')
+      .form
+        %label{:for => "guessField"}
+          ="Guess:"
+        %input#guessField.guessField{:type => "text"}/
+        %input#submitguess.guessSubmit{:type => "submit", :value => "Submit guess"}/
+        <button onClick="window.location.reload();">Play</button>
+      %body{:onload => "test()"}
+      %footer
+      %p.pull-right
+        %a{:href => "#"} Back to top
+      %p
+        \© 2020 Pan Pal Inc. ·

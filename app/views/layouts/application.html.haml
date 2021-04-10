@@ -45,16 +45,14 @@
             %span.icon-bar
             %span.icon-bar
           %a.navbar-brand{href: "/"} Home
-          %a.navbar-brand{href: "games"} Games
-          %a.navbar-brand{href: "forum"} Forum
-          %a.navbar-brand{href: "about"} About
+          %a.navbar-brand{href: "/games"} Games
+          %a.navbar-brand{href: "/forum"} Forum
+          %a.navbar-brand{href: ""} Chat room
+          %a.navbar-brand{href: "/contact"} Contact
+          %a.navbar-brand{href: "/about"} About
         #navbar.navbar-collapse.collapse
           %form.navbar-form.navbar-right
-            .form-group
-              %input.form-control{placeholder: "Email", type: "text"}/
-            .form-group
-              %input.form-control{placeholder: "Password", type: "password"}/
-            %button.btn.btn-success{type: "submit"} Sign in
+            = render 'shared/header'
         / /.navbar-collapse
 
   %body
