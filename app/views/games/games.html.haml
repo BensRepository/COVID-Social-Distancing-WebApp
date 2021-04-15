@@ -12,6 +12,9 @@
         %input#submitguess.guessSubmit{:type => "submit", :value => "Submit guess"}/
         <button onClick="window.location.reload();">Play</button>
       %body{:onload => "test()"}
+
+      <%= link to "downloadWindowsGame", download_game_windows%>
+      <%= link to "downloadMacGame", download_game_mac%>
       %footer
       %p.pull-right
         %a{:href => "#"} Back to top
