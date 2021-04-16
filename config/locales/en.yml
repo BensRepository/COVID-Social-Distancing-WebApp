@@ -29,3 +29,9 @@ en:
       game_desc2: "Guess 5 in a row to pass the test!"
       game_title: "Covid Knowledge Test"
       page_title: "Games"
+      personalspaceInvadersTitle: Personalspace Invaders
+      personalspaceInvadersDescription: We have developed a game for for you to play on your own comptuer! You play as a shopper in a supermarket trying navigate an aisle with other shopping coming in the other direction. You have to use the directional buttons on your keyboard to controle the player.
+      personalspaceInvadersExplanation: If any other shopper get with in your personal space you lose health. If another shopper coughs germs into your personal space you also lose health. While you are still shopping your score is increased. When your health reaches 0 the game is over.
+      personalspaceInvadersLeaderBoard: The game over screen will show you your score. You can click on a button to see the global leaderboard of all the scores that have been pushed on to the leaderboard. If you want to push your score on to the leaderboard you have to click the "update score button". This will add your score to the leaderboard.
+      personalspaceInvadersWindows: You can download a windows version of the game
+      personalspaceInvadersMac: You can download a mac version of the game
