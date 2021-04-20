@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+@import "bootstrap";
+@import "rails-chat-tutorial"
+=======
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -16,7 +20,7 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import "rails-chat-tutorial";
 
 h1 {
   color: black;font-weight: bold;
@@ -29,3 +33,4 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+>>>>>>> Stashed changes
