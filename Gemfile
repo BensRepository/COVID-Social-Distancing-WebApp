@@ -60,7 +60,7 @@ group :test do
 end
 gem 'devise'
 gem 'haml-rails'
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap-sass'
 gem 'modernizr-rails'
 gem 'rails-controller-testing'
 gem 'jquery-rails'
@@ -69,6 +69,7 @@ gem 'mailtrap'
 gem 'simple_form'
 gem 'redis'
 gem 'rails_db', '2.3.1'
+gem 'popper_js', '~> 2.8.6'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
