@@ -1,4 +1,4 @@
-<h1>
+<h1 class="RName">
   <%= @room.name %>
 </h1>
 
@@ -11,7 +11,7 @@
     <div class="chat" data-channel-subscribe="room" data-room-id="<%= @room.id %>">
       <% @room_messages.each do |room_message| %>
         <div class="chat-message-container">
-          <div class="row no-gutters">
+          <div>
 
 
             <div class="col">
@@ -57,9 +57,9 @@
   </div>
 </div>
 
-<div class="d-none" data-role="message-template">
+<div hidden class="d-none" data-role="message-template">
   <div class="chat-message-container">
-    <div class="row no-gutters">
+    <div >
 
 
       <div class="col">

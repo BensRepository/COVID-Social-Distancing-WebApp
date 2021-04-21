@@ -4,16 +4,29 @@
   width:auto;
   vertical-align:middle;
 }
-
+*/
+.RName{
+  text-align: center;
+}
+.input-group {
+  width: 977.5px;
+  float: right;
+  margin-right: 10px;
+}
+.nav-flex-column {
+  margin-bottom: 30px;
+}
 .room-nav-link {
   border: 1px solid #d6e4f1;
   background: #e5f1fd;
+  font-size: 20px;
+  padding: 10px 70px;
 
   & + .room-nav-link {
     border-top: 0 none;
   }
 }
-*/
+
 .chat {
   border: 1px solid #dfe0e2;
   background: #f3f4f6;
@@ -23,10 +36,6 @@
 
   .chat-message-container {
     padding: 5px;
-
-    .avatar {
-      margin: 5px;
-    }
 
     .message-content {
       padding: 5px;
