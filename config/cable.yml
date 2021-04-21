@@ -1,17 +1,3 @@
-<<<<<<< Updated upstream
-development:
-  adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: rails-chat-tutorial_development
-
-test:
-  adapter: async
-
-production:
-  adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: rails-chat-tutorial_production
-=======
 development:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
@@ -24,4 +10,3 @@ production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
   channel_prefix: group19project_production
->>>>>>> Stashed changes

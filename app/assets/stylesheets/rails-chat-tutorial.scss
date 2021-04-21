@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-.avatar {
+/*.avatar {
   max-height:35px;
   border-radius: 15px;
   width:auto;
@@ -14,60 +13,7 @@
     border-top: 0 none;
   }
 }
-
-.chat {
-  border: 1px solid #dfe0e2;
-  background: #f3f4f6;
-  height: 50vh;
-  border-radius: 5px 5px 0 0;
-  overflow-y: auto;
-
-  .chat-message-container {
-    padding: 5px;
-
-    .avatar {
-      margin: 5px;
-    }
-
-    .message-content {
-      padding: 5px;
-      border: 1px solid #358ced;
-      border-radius: 5px;
-      background: #3d96fc;
-      color: white;
-    }
-
-    & + .chat-message-container {
-      margin-top: 10px;
-    }
-  }
-}
-
-.chat-input {
-  border-top: 0 none;
-  border-radius: 0 0 5px 5px;
-}
-
-.ShowUsername {
-  background-color: #2562A5;
-}
-=======
-.avatar {
-  max-height:35px;
-  border-radius: 15px;
-  width:auto;
-  vertical-align:middle;
-}
-
-.room-nav-link {
-  border: 1px solid #d6e4f1;
-  background: #e5f1fd;
-
-  & + .room-nav-link {
-    border-top: 0 none;
-  }
-}
-
+*/
 .chat {
   border: 1px solid #dfe0e2;
   background: #f3f4f6;
