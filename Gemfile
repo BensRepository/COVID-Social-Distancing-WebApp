@@ -66,7 +66,11 @@ gem 'rails-controller-testing'
 gem 'jquery-rails'
 gem 'jquery-validation-rails'
 gem 'mailtrap'
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'simple_form'
+gem 'redis'
+gem 'rails_db', '2.3.1'
+gem 'popper_js', '~> 2.8.6'
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'simple_discussion'
