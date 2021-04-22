@@ -2,7 +2,7 @@
 var score = 0;
 function test()
 {
-   var picture = ["boris","sanitiser","mask"]; //picture array
+   var picture = ["boris","sanitiser","mask","december2019","2m","yes"]; //picture array
    var random = Math.floor(Math.random() * picture.length); //random number generated within the length of picture array
    var y = picture[random]; //random picture picked
    var image = document.createElement("img");
