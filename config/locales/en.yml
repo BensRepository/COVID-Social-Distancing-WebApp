@@ -1,33 +1,38 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
+---
 en:
+  app_title: "Pan pals"
   hello: "Hello world"
+  home:
+    contact:
+      email: "Email:"
+      enter_email: "Enter your email address"
+      enter_message: "What do you want to say?"
+      enter_name: "Enter your name"
+      enter_telephone: "Enter your telephone number"
+      message: "Message:"
+      name: "Name:"
+      page_title: Contact
+      submit: Submit
+      telephone: "Telephone:"
+      title: "Get in contact!"
+      welcome: "if you have a query or need advice send us an email and we'll try respond within 3 working days"
+    home:
+
+      title: "Pan Pal"
+      welcome: "The one stop shop for pandemic fun! :)"
+    request_contact:
+      email_sent: "Thank you. We will be in touch shortly."
+      no_email: "You must supply an email address"
+  games:
+    games:
+      game_desc: "Can you guess what Covid related object is being displayed?"
+      game_desc2: "Guess 5 in a row to pass the test!"
+      game_title: "Covid Knowledge Test"
+      page_title: "Games"
+      # This is all the text for the personal space avoiders game. 
+      personalspaceInvadersTitle: Personalspace Invaders
+      personalspaceInvadersDescription: We have developed a game for for you to play on your own comptuer! You play as a shopper in a supermarket trying navigate an aisle with other shopping coming in the other direction. You have to use the directional buttons on your keyboard to controle the player.
+      personalspaceInvadersExplanation: If any other shopper get with in your personal space you lose health. If another shopper coughs germs into your personal space you also lose health. While you are still shopping your score is increased. When your health reaches 0 the game is over.
+      personalspaceInvadersLeaderBoard: The game over screen will show you your score. You can click on a button to see the global leaderboard of all the scores that have been pushed on to the leaderboard. If you want to push your score on to the leaderboard you have to click the "update score button". This will add your score to the leaderboard.
+      personalspaceInvadersWindows: You can download a windows version of the game
+      personalspaceInvadersMac: You can download a mac version of the game
