@@ -1,4 +1,3 @@
-<script>
 
 		const govukurl = {
 			url: 'https://api.coronavirus.data.gov.uk/v1/data?',
@@ -42,5 +41,3 @@
             covidDataDiv.innerHTML = html
 
         }
-
-	</script>
