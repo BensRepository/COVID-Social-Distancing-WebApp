@@ -41,49 +41,6 @@
       %a.btn.btn-default{href: "https://mmediagroup.fr/covid-19", role: "button"} View details »
     .col-md-4
       %h2 UK Gov Covid Information
-      :javascript
-        const govurl = {
-        			url: 'https://api.coronavirus.data.gov.uk/v1/data?',
-                };
-
-                const
-                    AreaType = "nation",
-                    AreaName = "england";
-
-
-                const
-                    filters = [
-                        `areaType=${AreaType}`,
-                        `areaName=${AreaName}`
-
-                    ],
-                    structure = {
-                        date: "date",
-                        dailyCases: "newCasesByPublishDate"
-                    };
-
-                const
-                    apiParams = `filters=${filters.join(";")}&structure=${JSON.stringify(structure)}`,
-                    encodedParams = encodeURI(apiParams);
-
-                const govUkURL = `${govurl.url}${encodedParams }`
-
-                fetch(govUkURL)
-                    .then((ukdata) => ukdata.json())
-                    .then((covidData) => generateHTML(covidData))
-
-                const generateHTML = (ukdata) => {
-                    console.log(ukdata)
-
-                    const html = `
-                        <div class = "dataDate" > Date: ${ukdata.data[0].date}</div >
-                        <div class = "dataCases"> Daily Cases: ${ukdata.data[0].dailyCases}</div>
-                    `
-
-                    const covidDataDiv = document.querySelector('.GovUKcovidData')
-                    covidDataDiv.innerHTML = html
-
-                }
       .GovUKcovidData
       %p information from GovUk API covid database
       %a.btn.btn-default{href: "https://coronavirus.data.gov.uk/", role: "button"} View details »
