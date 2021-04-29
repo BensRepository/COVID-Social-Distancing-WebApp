@@ -14,35 +14,77 @@
       :javascript
         const endpoint = {
             url: 'https://covid-api.mmediagroup.fr/v1/cases?country=Global',
-                };
+        };
 
 
-                const MMediaURL = `${endpoint.url}`
-                console.log(MMediaURL)
+        const MMediaURL = `${endpoint.url}`
+        console.log(MMediaURL)
 
-                fetch(MMediaURL)
-                    .then((data) => data.json())
-                    .then((covidData) => generateHTML(covidData))
+        fetch(MMediaURL)
+            .then((data) => data.json())
+            .then((covidData) => generateHTML(covidData))
 
-                const generateHTML = (data) => {
-                    console.log(data)
+        const generateHTML = (data) => {
+            console.log(data)
 
-                    const html = `
-                        <div class = "population" > Population: ${data.All.population}</div >
-                        <div class = "globalCases"> Total Global Cases: ${data.All.confirmed}</div>
-                        <div class = "globalRecovered"> Total Global Recovered Cases: ${data.All.confirmed}</div>
-                    `
+            const html = `
+                            <div class = "population" > Population: ${data.All.population}</div >
+                            <div class = "globalCases"> Total Global Cases: ${data.All.confirmed}</div>
+                            <div class = "globalRecovered"> Total Global Recovered Cases: ${data.All.confirmed}</div>
+                        `
 
-                    const covidDataDiv = document.querySelector('.MMediacovidData')
-                    covidDataDiv.innerHTML = html
+            const covidDataDiv = document.querySelector('.MMediacovidData')
+            covidDataDiv.innerHTML = html
 
-                }
+        }
+        const endpointUK = {
+            url: 'https://api.coronavirus.data.gov.uk/v1/data?',
+        };
+
+        const
+            AreaType = "nation",
+            AreaName = "england";
+
+
+        const
+            filters = [
+                `areaType=${AreaType}`,
+                `areaName=${AreaName}`
+
+            ],
+            structure = {
+                date: "date",
+                dailyCases: "newCasesByPublishDate"
+            };
+
+        const
+            apiParams = `filters=${filters.join(";")}&structure=${JSON.stringify(structure)}`,
+            encodedParams = encodeURI(apiParams);
+
+        const govUkURL = `${endpointUK.url}${encodedParams}`
+
+        fetch(govUkURL)
+            .then((data) => data.json())
+            .then((covidData) => generateHTMLUK(covidData))
+
+        const generateHTMLUK = (data) => {
+            console.log(data)
+
+            const html = `
+                            <div class = "dataDate" > Date: ${data.data[0].date}</div >
+                            <div class = "dataCases"> Daily Cases: ${data.data[0].dailyCases}</div>
+                        `
+
+            const covidDataDiv = document.querySelector('.GovUKcovidData')
+            covidDataDiv.innerHTML = html
+
+        }
       .MMediacovidData
       %a.btn.btn-default{href: "https://mmediagroup.fr/covid-19", role: "button"} View details »
     .col-md-4
       %h2 UK Gov Covid Information
-      .GovUKcovidData
       %p information from GovUk API covid database
+      .GovUKcovidData
       %a.btn.btn-default{href: "https://coronavirus.data.gov.uk/", role: "button"} View details »
     .col-md-4
       %h2 Current  high scores!
