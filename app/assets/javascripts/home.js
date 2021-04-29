@@ -27,9 +27,9 @@
 
         fetch(govUkURL)
             .then((ukdata) => ukdata.json())
-            .then((covidData) => generateHTML(covidData))
+            .then((covidData) => generateHTML2(covidData))
 
-        const generateHTML = (ukdata) => {
+        const generateHTML2 = (ukdata) => {
             console.log(ukdata)
 
             const html = `
