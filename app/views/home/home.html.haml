@@ -55,6 +55,10 @@
             structure = {
                 date: "date",
                 dailyCases: "newCasesByPublishDate"
+                newCasesByPublishDate: "newCasesByPublishDate",
+                cumCasesByPublishDate: "cumCasesByPublishDate"
+                newDeaths28DaysByPublishDate: "newDeaths28DaysByPublishDate",
+                cumDeaths28DaysByPublishDate: "cumDeaths28DaysByPublishDate"
             };
 
         const
@@ -73,6 +77,10 @@
             const html = `
                             <div class = "dataDate" > Date: ${data.data[0].date}</div >
                             <div class = "dataCases"> Daily Cases: ${data.data[0].dailyCases}</div>
+                            <div class = "newCases"> New Cases: ${data.data[0].newCasesByPublishDate}</div>
+                            <div class = "totalCases"> Total Cases Cases: ${data.data[0].cumCasesByPublishDate}</div>
+                            <div class = "totalCases"> New Deaths: ${data.data[0].newDeaths28DaysByPublishDate}</div>
+                            <div class = "totaldeaths"> Total Deaths: ${data.data[0].cumDeaths28DaysByPublishDate}</div>
                         `
 
             const covidDataDiv = document.querySelector('.GovUKcovidData')
