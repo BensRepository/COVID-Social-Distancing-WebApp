@@ -1,4 +1,4 @@
-$(function() {
+$(document).on('turbolinks:load', function() {
   $('[data-channel-subscribe="room"]').each(function(index, element) {
     var $element = $(element),
         room_id = $element.data('room-id')
