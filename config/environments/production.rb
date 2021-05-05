@@ -1,6 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.web_socket_server_url = "wss://group19project.herokuapp.com" 
+  config.action_cable.allowed_request_origins = ['https://group19project.herokuapp.com', 'http://group19project.herokuapp.com']
   # Code is not reloaded between requests.
   config.cache_classes = true
 
