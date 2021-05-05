@@ -1,6 +1,6 @@
 development:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  url: <%= ENV.fetch("REDISTOGO_URL") { "redis://redistogo:4acead9715c5d172df7f7df31ab4c029@soapfish.redistogo.com:11341/" } %>
   channel_prefix: group19project_development
 
 test:
@@ -8,5 +8,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  url: <%= ENV.fetch("REDISTOGO_URL") { "redis://redistogo:4acead9715c5d172df7f7df31ab4c029@soapfish.redistogo.com:11341/" } %>
   channel_prefix: group19project_production
