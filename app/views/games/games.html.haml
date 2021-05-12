@@ -1,3 +1,4 @@
+.container
 %body{:onload => "test()"}
   <!--This is all the text for personal space avoiders game. -->
   %h1= t('.personalspaceInvadersTitle')
@@ -8,7 +9,6 @@
   = link_to "Here","/PersonalSpaceInvaders(windows).zip"
   %p= t('.personalspaceInvadersMac')
   = link_to "Here","/PersonalSpaceInvaders(mac).zip"
-.container
   %body
     .container-fluid
       %title= t('.page_title')
