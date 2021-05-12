@@ -2,7 +2,7 @@ $(document).on('turbolinks:load',function() {
   function ValidateContactForm()
   {
 
-  $('#ContactForm').validate({
+     $('#ContactForm').validate({
       rules: { //field rules for form validation
         name: {required: true},
         email: {required: true, email: true},
