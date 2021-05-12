@@ -1,8 +1,8 @@
-%body{:onload => "function()"}
 .container
+  %body{:onload => "function()"}
   %title= t('.page_title')
-    %h1= t('.title')
-    %p= t('.welcome')
+  %h1= t('.title')
+  %p= t('.welcome')
 
   = form_tag request_contact_path,:id => 'ContactForm', method: 'post' do
     = label_tag :name, t('.name')
