@@ -42,7 +42,7 @@ $(document).on('turbolinks:load',function() {
          score = 0;
          location.reload();
      }
-}}};
+}};
 
 
 
