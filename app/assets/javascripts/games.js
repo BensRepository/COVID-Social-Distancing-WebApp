@@ -1,5 +1,9 @@
 // random picture generated
-var score = 0;
+function score()
+{
+   var score = 0;
+}
+
 function test()
 {
    var picture = ["boris","sanitiser","mask","december2019","2m","yes"]; //picture array
