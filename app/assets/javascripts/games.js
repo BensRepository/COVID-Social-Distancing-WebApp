@@ -1,5 +1,10 @@
 // random picture generated
-var score = 0;
+
+ $( document ).ready(function()
+ {
+   var score = 0;
+   test();
+ });
 function test()
 {
    var picture = ["boris","sanitiser","mask","december2019","2m","yes"]; //picture array
@@ -42,11 +47,6 @@ function test()
   }
 }};
 
-   //      $( document ).ready(function(){
-   //        var score = 0;
-   //        test();
-   //
-   // });
 
 
 
