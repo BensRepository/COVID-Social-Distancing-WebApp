@@ -1,8 +1,9 @@
 // random picture generated
-var score = 0;
+$(document).on('turbolinks:load',function() {
+   var score = 0;
+}
 function test()
 {
-   var score = 0;
    var picture = ["boris","sanitiser","mask","december2019","2m","yes"]; //picture array
    var random = Math.floor(Math.random() * picture.length); //random number generated within the length of picture array
    var y = picture[random]; //random picture picked
