@@ -1,19 +1,20 @@
 .container
+  %title= t('.page_title')
   %body{:onload => "function()"}
-    %title= t('.page_title')
     %h1= t('.title')
     %p= t('.welcome')
 
-    = form_tag request_contact_path,:id => 'ContactForm', method: 'post' do
-      = label_tag :name, t('.name')
-      = text_field_tag :name
-      = label_tag :email, t('.email')
-      = email_field_tag :email
-      = label_tag :telephone, t('.telephone')
-      = telephone_field_tag :telephone
-      = label_tag :message, t('.message')
-      = text_field_tag :message,'', size: 70
-      = submit_tag t('.submit')
+  = form_tag request_contact_path,:id => 'ContactForm', method: 'post' do
+    = label_tag :name, t('.name')
+    = text_field_tag :name
+    = label_tag :email, t('.email')
+    = email_field_tag :email
+    = label_tag :telephone, t('.telephone')
+    = telephone_field_tag :telephone
+    = label_tag :message, t('.message')
+    = text_field_tag :message,'', size: 70
+    = submit_tag t('.submit')
+
       %footer
         %p.pull-right
           %a{:href => "#"} Back to top
