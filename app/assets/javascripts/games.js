@@ -2,7 +2,7 @@
 function score()
 {
    var score = 0;
-}
+};
 
 function test()
 {
