@@ -1,4 +1,7 @@
-// random picture generated
+document.body.onload = function() {
+test();
+score();
+};
 function score(){
    var score = 0;
 }
