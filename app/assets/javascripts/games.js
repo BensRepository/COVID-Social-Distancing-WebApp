@@ -20,7 +20,7 @@ function test()
 
    if(x == y) //check if the guess is correct
    {
-      score++
+      score++;
       alert("WELL DONE!! The it was " + y +", you guessed it in "
                 + guess + " attempts! "); // if right displays this message
       if(score == 5){
