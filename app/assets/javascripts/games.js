@@ -1,7 +1,8 @@
+// random picture generated
 var score = 0;
 function test()
 {
-   var picture = ["boris","sanitiser","mask","december2019","2m","yes"]; //picture array
+   var picture = ["boris","sanitiser","mask"]; //picture array
    var random = Math.floor(Math.random() * picture.length); //random number generated within the length of picture array
    var y = picture[random]; //random picture picked
    var image = document.createElement("img");
@@ -22,7 +23,7 @@ function test()
       score++
       alert("WELL DONE!! The it was " + y +", you guessed it in "
                 + guess + " attempts! "); // if right displays this message
-      if(score == 5){
+      if(score == 2){
         alert("You passed the test!")
         location.reload();
 
@@ -41,10 +42,8 @@ function test()
   }
 }};
 
-$( document ).ready(function(){
-   var score = 0;
-   test();
-  });
+        $( document ).ready(function(){
+          var score = 0;
+          test();
 
-
-
+   });
