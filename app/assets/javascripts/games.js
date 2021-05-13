@@ -1,8 +1,4 @@
 // random picture generated
-$( document ).ready(function(){
-   var score = 0;
-   test();
-});
 var score = 0;
 function test()
 {
@@ -27,7 +23,7 @@ function test()
       score++
       alert("WELL DONE!! The it was " + y +", you guessed it in "
                 + guess + " attempts! "); // if right displays this message
-      if(score == 2){
+      if(score == 5){
         alert("You passed the test!")
         location.reload();
 
@@ -45,5 +41,11 @@ function test()
       location.reload();
   }
 }};
+
+        $( document ).ready(function(){
+          var score = 0;
+          test();
+
+   });
 
   
