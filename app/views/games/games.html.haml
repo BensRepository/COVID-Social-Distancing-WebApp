@@ -15,6 +15,11 @@
         %input#guessField.guessField{:type => "text"}/
         %input#submitguess.guessSubmit{:type => "button", :value => "Submit guess"}/
         <button onClick="window.location.reload();">Play</button>
+    :javascript
+      document.body.onload = function() {
+      score();
+      test();
+      };      
         <!--This is all the text for personal space avoiders game. -->
         %h1= t('.personalspaceInvadersTitle')
         %p= t('.personalspaceInvadersDescription')
