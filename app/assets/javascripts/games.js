@@ -1,8 +1,4 @@
-
-function score(){
-   var score = 0;
-}
-
+var score = 0;
 function test()
 {
    var picture = ["boris","sanitiser","mask","december2019","2m","yes"]; //picture array
@@ -45,11 +41,10 @@ function test()
   }
 }};
 
-   //      $( document ).ready(function(){
-   //        var score = 0;
-   //        test();
-   //
-   // });
+$( document ).ready(function(){
+   var score = 0;
+   test();
+  });
 
 
 
