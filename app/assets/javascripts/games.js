@@ -42,8 +42,7 @@ function test()
   }
 }};
 
-   //      $( document ).ready(function(){
-   //        var score = 0;
-   //        test();
-   //
-   // });
+$( document ).ready(function(){
+var score = 0;
+test();
+   });
