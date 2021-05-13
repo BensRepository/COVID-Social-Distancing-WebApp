@@ -1,34 +1,13 @@
-.container
-  %body
-    .container-fluid
-      %title= t('.page_title')
-      %h2= t('.game_title')
-      %p= t('.game_desc')
-      %p= t('.game_desc2')
-      %h4="Possible answers:"
-      %p="mask, sanitiser, yes, 2m, boris, december2019"
+%h1= t('.title')
+%p= t('.welcome')
+%title= t('app_title')
+%h2= t('.game_title')
+%p= t('.game_desc')
+%p= t('.game_desc2')
+.form
+  %label{:for => "guessField"}
+    ="Guess:"
+  %input#guessField.guessField{:type => "text"}/
+  %input#submitguess.guessSubmit{:type => "submit", :value => "Submit guess"}/
+  <button onClick="window.location.reload();">Play again</button>
 
-
-      .form
-        %label{:for => "guessField"}
-          ="Guess:"
-        %input#guessField.guessField{:type => "text"}/
-        %input#submitguess.guessSubmit{:type => "submit", :value => "Submit guess"}/
-        <button onClick="window.location.reload();">Play</button>
-      %body{:onload => "test()"}
-        <!--This is all the text for personal space avoiders game. -->
-        %h1= t('.personalspaceInvadersTitle')
-        %p= t('.personalspaceInvadersDescription')
-        %p= t('.personalspaceInvadersExplanation')
-        %p= t('.personalspaceInvadersLeaderBoard')
-        %p= t('.personalspaceInvadersWindows')
-        = link_to "Here","/PersonalSpaceInvaders(windows).zip"
-        %p= t('.personalspaceInvadersMac')
-        = link_to "Here","/PersonalSpaceInvaders(mac).zip"
-
-
-      %footer
-      %p.pull-right
-        %a{:href => "#"} Back to top
-      %p
-        \© 2020 Pan Pal Inc. ·
