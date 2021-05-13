@@ -38,7 +38,7 @@ function test()
       guess++;
       alert("Not quite! your score was " + score) //if wrong displays this message
       score = 0;
-      test();
+      location.reload();
   }
 }};
 
