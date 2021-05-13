@@ -1,6 +1,7 @@
 // random picture generated
-function score(){
-var score = 0;};
+function score()
+{
+   var score = 0;};
 
 function test()
 {
