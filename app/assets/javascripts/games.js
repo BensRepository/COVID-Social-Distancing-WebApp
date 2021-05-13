@@ -1,9 +1,4 @@
-// random picture generated
-function score()
-{
-   var score = 0;
-};
-
+var score = 0;
 function test()
 {
    var picture = ["boris","sanitiser","mask","december2019","2m","yes"]; //picture array
@@ -42,7 +37,7 @@ function test()
       guess++;
       alert("Not quite! your score was " + score) //if wrong displays this message
       score = 0;
-      location.reload();
+      test();
   }
 }};
 
