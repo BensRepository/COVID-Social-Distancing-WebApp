@@ -1,4 +1,13 @@
 .container
+  <!--This is all the text for personal space avoiders game. -->
+  %h1= t('.personalspaceInvadersTitle')
+  %p= t('.personalspaceInvadersDescription')
+  %p= t('.personalspaceInvadersExplanation')
+  %p= t('.personalspaceInvadersLeaderBoard')
+  %p= t('.personalspaceInvadersWindows')
+  = link_to "Here","/PersonalSpaceInvaders(windows).zip"
+  %p= t('.personalspaceInvadersMac')
+  = link_to "Here","/PersonalSpaceInvaders(mac).zip"
   %body
     .container-fluid
       %title= t('.page_title')
@@ -13,18 +22,9 @@
         %label{:for => "guessField"}
           ="Guess:"
         %input#guessField.guessField{:type => "text"}/
-        %input#submitguess.guessSubmit{:type => "submit", :value => "Submit guess"}/
+        %input#submitguess.guessSubmit{:type => "button", :value => "Submit guess"}/
         <button onClick="window.location.reload();">Play</button>
       %body{:onload => "test()"}
-        <!--This is all the text for personal space avoiders game. -->
-        %h1= t('.personalspaceInvadersTitle')
-        %p= t('.personalspaceInvadersDescription')
-        %p= t('.personalspaceInvadersExplanation')
-        %p= t('.personalspaceInvadersLeaderBoard')
-        %p= t('.personalspaceInvadersWindows')
-        = link_to "Here","/PersonalSpaceInvaders(windows).zip"
-        %p= t('.personalspaceInvadersMac')
-        = link_to "Here","/PersonalSpaceInvaders(mac).zip"
 
 
       %footer
