@@ -1,4 +1,8 @@
 // random picture generated
+$( document ).ready(function(){
+   var score = 0;
+   test();
+});
 var score = 0;
 function test()
 {
@@ -42,8 +46,4 @@ function test()
   }
 }};
 
-        $( document ).ready(function(){
-          var score = 0;
-          test();
-
-   });
+  
