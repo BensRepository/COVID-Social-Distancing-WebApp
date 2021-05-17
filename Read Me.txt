@@ -1,0 +1,5 @@
+To test functionalty on Heroku use this link - https://group19project.herokuapp.com/
+(Project does not run locally)
+if you have any problems please contact bh00527@surrey.ac.uk
+
+Have a good day :)
